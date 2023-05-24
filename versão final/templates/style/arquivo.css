@@ -1,0 +1,34 @@
+/* Estilo dos botões */
+button {
+    background-color: #FFD700; /* Amarelo Ipiranga */
+    color: #000000; /* Preto */
+    border: none;
+    border-radius: 20px; /* Borda arredondada */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0000FF; /* Azul Ipiranga */
+    color: #FFFFFF; /* Branco */
+  }
+  
+  /* Estilo dos inputs de radio e checkbox */
+  input[type="radio"], input[type="checkbox"] {
+    transform: scale(1.5); /* Aumenta o tamanho dos inputs */
+    margin-right: 10px;
+  }
+  
+  /* Estilo geral */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF; /* Branco */
+    color: #000000; /* Preto */
+  }
+  
+  h1 {
+    color: #FFD700; /* Amarelo Ipiranga */
+  }
+  
+  

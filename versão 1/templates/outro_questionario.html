@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Outro Questionário</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Outro Questionário</h1>
+    <form action="/agradecimento" method="post">
+        <label>O que te impede de usar o app?</label>
+        <select name="impedimento">
+            <option value="Dificuldade de uso">Dificuldade de uso</option>
+            <option value="Desconto não interessante">Desconto não interessante</option>
+            <option value="Exige muitos dados">Exige muitos dados</option>
+            <option value="Não gosto de tecnologia">Não gosto de tecnologia</option>
+        </select>
+
+        <label>O que faria você mudar de ideia?</label>
+        <select name="mudanca_ideia">
+            <option value="Mais descontos">Mais descontos</option>
+            <option value="Melhor usabilidade">Melhor usabilidade</option>
+            <option value="Mais praticidade">Mais praticidade</option>
+            <option value="Uso em mais opções que só combustível">Uso em mais opções que só combustível</option>
+        </select>
+
+        <label>Você mais recomendaria o uso do app do posto para seus amigos e familiares?</label>
+        <input type="radio" name="recomendar" value="Sim">Sim
+        <input type="radio" name="recomendar" value="Não">Não
+
+        <button type="submit">Finalizar Questionário</button>
+    </form>
+</body>
+</html>

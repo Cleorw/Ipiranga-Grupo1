@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Questionário Ipiranga</title>
+    <style>
+        /* Estilo e cores futuristas */
+        /* Coloque aqui o código CSS para o estilo desejado */
+    </style>
+</head>
+<body>
+    <h1>Questionário Ipiranga</h1>
+    <img src="logo_ipiranga.png" alt="Logo Ipiranga">
+    <form method="POST" action="/questionario">
+        <label for="nome">Qual é o seu nome?</label>
+        <input type="text" id="nome" name="nome" required>
+        <br><br>
+        <label>Você usa aplicativo de celular de postos de gasolina?</label>
+        <br>
+        <label for="app_uso_sim">Sim</label>
+        <input type="radio" id="app_uso_sim" name="app_uso" value="Sim" required>
+        <label for="app_uso_nao">Não</label>
+        <input type="radio" id="app_uso_nao" name="app_uso" value="Não" required>
+        <br><br>
+
+        <div id="questionario_app" style="display: none;">
+            <label>Você usa o app para fazer pagamentos?</label>
+            <br>
+            <label for="app_pagamentos_sim">Sim</label>
+            <input type="radio" id="app_pagamentos_sim" name="app_pagamentos" value="Sim">
+            <label for="app_pagamentos_nao">Não</label>
+            <input type="radio" id="app_pagamentos_nao" name="app_pagamentos" value="Não">
+            <br><br>
+
+            <label>Você usa o app para ganhar descontos?</label>
+            <br>
+            <label for="app_descontos_sim">Sim</label>
+            <input type="radio" id="app_descontos_sim" name="app_descontos" value="Sim">
+            <label for="app_descontos_nao">Não</label>
+            <input type="radio" id="app_descontos_nao" name="app_descontos" value="Não">
+            <br><br>
+
+            <label>Gostaria de usar o app para compras em loja de conveniência do posto?</label>
+            <br>
+            <label for="app_compras_sim">Sim</label>
+            <input type="radio" id="app_compras_sim" name="app_compras" value="Sim">
+            <label for="app_compras_nao">Não</label>
+            <input type="radio" id="app_compras_nao" name="app_compras" value="Não">
+            <br><br>
+        </div>
+
+        <div id="questionario_nao_app" style="display: none;">
+            <label>O que te impede de usar o app?</label>
+            <br>
+            <input type="checkbox" id="impede_uso_dificuldade" name="impede_uso" value="Dificuldade de uso">
+            <label for="impede_uso_dificuldade">Dificuldade de uso</label>
+            <br>
+            <input type="checkbox" id="impede_uso_desconto" name="impede_uso" value="Desconto não interessante">
+            <label for="impede_uso_desconto">Desconto não interessante</label>
+            <br>
+            <input type="checkbox" id="impede_uso_dados" name="impede_uso" value="Exige muitos dados">
+            <label for="impede_uso_dados">Exige muitos dados</label>
+            <br>
+            <input type="checkbox" id="impede_uso_tecnologia" name="impede_uso" value="Não gosto de tecnologia">
+            <label for="impede_uso_tecnologia">Não gosto de tecnologia</label>
+            <br><br>
+            <label>O que faria você mudar de ideia?</label>
+            <br>
+            <input type="checkbox" id="mudar_ideia_descontos" name="mudar_ideia" value="Mais descontos">
+            <label for="mudar_ideia_descontos">Mais descontos</label>
+            <br>
+            <input type="checkbox" id="mudar_ideia_usabilidade" name="mudar_ideia" value="Melhor usabilidade">
+            <label for="mudar_ideia_usabilidade">Melhor usabilidade</label>
+            <br>
+            <input type="checkbox" id="mudar_ideia_praticidade" name="mudar_ideia" value="Mais praticidade">
+            <label for="mudar_ideia_praticidade">Mais praticidade</label>
+            <br>
+            <input type="checkbox" id="mudar_ideia_opcoes" name="mudar_ideia" value="Uso em mais opções que só combustível">
+            <label for="mudar_ideia_opcoes">Uso em mais opções que só combustível</label>
+            <br><br>
+    
+            <label>Você mais recomendaria o uso do app do posto para seus amigos e familiares?</label>
+            <br>
+            <label for="recomendar_sim">Sim</label>
+            <input type="radio" id="recomendar_sim" name="recomendar" value="Sim">
+            <label for="recomendar_nao">Não</label>
+            <input type="radio" id="recomendar_nao" name="recomendar" value="Não">
+            <br><br>
+        </div>
+    
+        <button type="submit">Finalizar Questionário</button>
+    </form>
+</body>
+</html>    

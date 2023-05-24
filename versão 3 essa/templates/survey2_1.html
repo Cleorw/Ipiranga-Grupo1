@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>API do Ipiranga - Pesquisa</title>
+    <style>
+        body {
+        background-color: #000000;
+        color: #ffffff;
+        font-family: Arial, sans-serif;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    form {
+        margin: 20px auto;
+        max-width: 400px;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #333333;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    select {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        background-color: #555555;
+        color: #ffffff;
+        margin-bottom: 20px;
+    }
+
+    button[type="submit"],
+    button[type="button"] {
+        padding: 10px 20px;
+        border-radius: 30px;
+        border: none;
+        background-color: #ff9900;
+        color: #ffffff;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    button[type="submit"]:hover,
+    button[type="button"]:hover {
+        background-color: #ff6600;
+    }
+    </style>
+</head>
+<body>
+    <h1>Pesquisa - Ipiranga</h1>
+    <form action="/survey2_1" method="POST">
+        <label for="obstacles">O que te impede de usar o aplicativo?</label>
+        <select id="obstacles" name="obstacles" required>
+            <option value="Dificuldade de uso">Dificuldade de uso</option>
+            <option value="Desconto não interessante">Desconto não interessante</option>
+            <option value="Exige muitos dados">Exige muitos dados</option>
+            <option value="Não gosto de tecnologia">Não gosto de tecnologia</option>
+        </select>
+        <br>
+        <label for="reconsideration">O que faria você mudar de ideia?</label>
+        <select id="reconsideration" name="reconsideration" required>
+            <option value="Mais descontos">Mais descontos</option>
+            <option value="Melhor usabilidade">Melhor usabilidade</option>
+            <option value="Mais praticidade">Mais praticidade</option>
+            <option value="Uso em mais opções que só combustível">Uso em mais opções que só combustível</option>
+        </select>
+        <br>
+        <label for="recommend">Você recomendaria o uso do aplicativo do posto para seus amigos e familiares?</label>
+        <select id="recommend" name="recommend" required>
+            <option value="Sim">Sim</option>
+            <option value="Não">Não</option>
+        </select>
+        <br>
+        <button type="submit">Finalizar questionário</button>
+    </form>
+</body>
+</html>

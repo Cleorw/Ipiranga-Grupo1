@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Questionário</title>
+    <style>
+        body {
+        background-color: #000000;
+        color: #ffffff;
+        font-family: Arial, sans-serif;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    form {
+        margin: 20px auto;
+        max-width: 400px;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #333333;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    select {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        background-color: #555555;
+        color: #ffffff;
+        margin-bottom: 20px;
+    }
+
+    button[type="submit"],
+    button[type="button"] {
+        padding: 10px 20px;
+        border-radius: 30px;
+        border: none;
+        background-color: #ff9900;
+        color: #ffffff;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    button[type="submit"]:hover,
+    button[type="button"]:hover {
+        background-color: #ff6600;
+    }
+    </style>
+</head>
+<body>
+    <h1>Questionário</h1>
+    <form action="/agradecimento" method="post">
+        <label>Você usa o app para fazer pagamentos?</label>
+        <select name="usa_pagamentos">
+            <option value="Sim">Sim</option>
+            <option value="Não">Não</option>
+        </select>
+
+        <label>Você usa o app para ganhar descontos?</label>
+        <select name="usa_descontos">
+            <option value="Sim">Sim</option>
+            <option value="Não">Não</option>
+        </select>
+
+        <label>Gostaria de usar o app para compras em loja de conveniência do posto?</label>
+        <select name="usa_conveniencia">
+            <option value="Sim">Sim</option>
+            <option value="Não">Não</option>
+        </select>
+
+        <button type="submit">Próximo</button>
+    </form>
+</body>
+</html>

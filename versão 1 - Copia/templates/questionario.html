@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Questionário</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Questionário</h1>
+    <form action="/agradecimento" method="post">
+        <label>Você usa o app para fazer pagamentos?</label>
+        <select name="usa_pagamentos">
+            <option value="Sim">Sim</option>
+            <option value="Não">Não</option>
+        </select>
+
+        <label>Você usa o app para ganhar descontos?</label>
+        <select name="usa_descontos">
+            <option value="Sim">Sim</option>
+            <option value="Não">Não</option>
+        </select>
+
+        <label>Gostaria de usar o app para compras em loja de conveniência do posto?</label>
+        <select name="usa_conveniencia">
+            <option value="Sim">Sim</option>
+            <option value="Não">Não</option>
+        </select>
+
+        <button type="submit">Próximo</button>
+    </form>
+</body>
+</html>

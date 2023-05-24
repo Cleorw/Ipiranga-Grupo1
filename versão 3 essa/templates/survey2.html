@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>API do Ipiranga - Pesquisa</title>
+    <style>
+        body {
+        background-color: #000000;
+        color: #ffffff;
+        font-family: Arial, sans-serif;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    form {
+        margin: 20px auto;
+        max-width: 400px;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #333333;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    select {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        background-color: #555555;
+        color: #ffffff;
+        margin-bottom: 20px;
+    }
+
+    button[type="submit"],
+    button[type="button"] {
+        padding: 10px 20px;
+        border-radius: 30px;
+        border: none;
+        background-color: #ff9900;
+        color: #ffffff;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    button[type="submit"]:hover,
+    button[type="button"]:hover {
+        background-color: #ff6600;
+    }
+    </style>
+</head>
+<body>
+    <h1>Pesquisa - Ipiranga</h1>
+    <form action="/survey2" method="POST">
+        <label for="payments">No aplicativo é possível fazer pagamentos?</label>
+        <select id="payments" name="payments" required>
+            <option value="yes">Sim</option>
+            <option value="no">Não</option>
+        </select>
+        <br>
+        <label for="discounts">Você ganha descontos?</label>
+        <select id="discounts" name="discounts" required>
+            <option value="yes">Sim</option>
+            <option value="no">Não</option>
+        </select>
+        <br>
+        <label for="convenience_store">Gostaria de usar o aplicativo para compras na loja de conveniência do posto?</label>
+        <select id="convenience_store" name="convenience_store" required>
+            <option value="yes">Sim</option>
+            <option value="no">Não</option>
+        </select>
+        <br>
+        <button type="submit">Próximo</button>
+    </form>
+</body>
+</html>
